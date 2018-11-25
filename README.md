@@ -1,5 +1,10 @@
-# Activity-LaunchMode
+# Activity-LaunchMode 设置方式：
+#### 1. 在 AndroidManifest.xml 里面设置 android:launchMode 属性
+#### 2. 通过设置 Intent.setFlags(int flags) 来设置启动的 Activity 的启动模式
+## 注意：通过代码来设置 Activity 的启动模式的方式，优先级比清单文件设置更高。
+
 Activity 四种启动模式详解
+
 ## 1. standard
 #### 这是 Activity 的默认启动模式，每次激活 Activity 的时候都会创建一个新的 Activity 实例，并放入任务栈中。
 ![示例图片](https://github.com/Muran-Hu/Activity-LaunchMode_standard/blob/master/standard.png)
